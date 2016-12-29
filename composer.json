@@ -1,0 +1,10 @@
+{
+    "name": "turiknox/magento-google-trusted-stores",
+    "type": "magento-module",
+    "license": "MIT",
+    "description": "A simple Magento module that will allow you to integrate the Google Trusted Stores badge and order confirmation code.",
+    "homepage": "https://github.com/turiknox/magento-google-trusted-stores",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    } 
+}

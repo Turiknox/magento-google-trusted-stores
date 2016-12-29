@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <blocks>
+            <turiknox_trustedstores>
+                <class>Turiknox_Trustedstores_Block</class>
+            </turiknox_trustedstores>
+        </blocks>
+        <helpers>
+            <turiknox_trustedstores>
+                <class>Turiknox_Trustedstores_Helper</class>
+            </turiknox_trustedstores>
+        </helpers>
+        <models>
+            <turiknox_trustedstores>
+                <class>Turiknox_Trustedstores_Model</class>
+            </turiknox_trustedstores>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <turiknox_trustedstores>
+                    <file>turiknox/trustedstores.xml</file>
+                </turiknox_trustedstores>
+            </updates>
+        </layout>
+    </frontend>
+</config>

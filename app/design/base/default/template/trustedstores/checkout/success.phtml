@@ -1,0 +1,28 @@
+<?php if ($this->isEnabled()): ?>
+    <!-- BEGIN GOOGLE TRUSTED STORES ORDER CONFIRMATION CODE -->
+    <div id="gts-order" style="display:none;" translate="no">
+        <span id="gts-o-id"><?php echo $this->escapeHtml($this->getOrderId()); ?></span>
+        <span id="gts-o-domain"><?php echo preg_replace("(^https?://)", "", Mage::getBaseUrl()); ?></span>
+        <span id="gts-o-email"><?php echo $this->escapeHtml($this->getCustomerEmail()); ?></span>
+        <span id="gts-o-country"><?php echo $this->escapeHtml($this->getCustomerCountry()); ?></span>
+        <span id="gts-o-currency"><?php echo $this->getCurrency(); ?></span>
+        <span id="gts-o-total"><?php echo $this->getGrandTotal(); ?></span>
+        <span id="gts-o-discounts"><?php echo $this->getDiscounts(); ?></span>
+        <span id="gts-o-shipping-total"><?php echo $this->getShipping(); ?></span>
+        <span id="gts-o-tax-total"><?php echo $this->getTax(); ?></span>
+        <span id="gts-o-est-ship-date"><?php echo $this->getEstimatedShippingDate() ?></span>
+        <span id="gts-o-est-delivery-date"><?php echo $this->getEstimatedDeliveryDate() ?></span>
+        <span id="gts-o-has-preorder"><?php echo $this->doesOrderContainBackOrder() ? 'Y' : 'N' ?></span>
+        <span id="gts-o-has-digital"><?php echo $this->doesOrderContainDigitalProducts() ? 'Y' : 'N' ?></span>
+
+        <?php foreach($this->getOrder()->getAllVisibleItems() as $key => $item ) : ?>
+            <span class="gts-item">
+
+                <span class="gts-i-name"><?php echo $this->escapeHtml($item->getName()); ?></span>
+                <span class="gts-i-price"><?php echo number_format($item->getPrice(), 2, '.', ''); ?></span>
+                <span class="gts-i-quantity"><?php echo $this->escapeHtml($item->getQtyToInvoice()); ?></span>
+            </span>
+        <?php endforeach; ?>
+    </div>
+    <!-- END GOOGLE TRUSTED STORES ORDER CONFIRMATION CODE -->
+<?php endif; ?>

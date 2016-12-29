@@ -1,0 +1,20 @@
+<?php if ($this->isEnabled()): ?>
+    <!-- BEGIN GOOGLE TRUSTED STORES BADGE CODE -->
+    <script type="text/javascript">
+        var gts = gts || [];
+
+        gts.push(["id", "<?php echo $this->escapeHtml($this->getTrustedStoresId()); ?>"]);
+        gts.push(["badge_position", "<?php echo $this->escapeHtml($this->getBadgePosition()); ?>"]);
+        gts.push(["locale",  "<?php echo Mage::app()->getLocale()->getLocaleCode(); ?>"]);
+
+        (function() {
+            var gts = document.createElement("script");
+            gts.type = "text/javascript";
+            gts.async = true;
+            gts.src = "https://www.googlecommerce.com/trustedstores/api/js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(gts, s);
+        })();
+    </script>
+    <!-- END GOOGLE TRUSTED STORES BADGE CODE -->
+<?php endif; ?>

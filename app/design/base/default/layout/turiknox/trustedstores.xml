@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="before_body_end">
+            <block type="turiknox_trustedstores/badge" name="trusted.stores.badge" template="trustedstores/badge.phtml" />
+        </reference>
+    </default>
+    <checkout_onepage_success>
+        <reference name="before_body_end">
+            <block type="turiknox_trustedstores/checkout_success" name="trusted.stores.checkout.success"
+                   template="trustedstores/checkout/success.phtml" />
+        </reference>
+    </checkout_onepage_success>
+</layout>
