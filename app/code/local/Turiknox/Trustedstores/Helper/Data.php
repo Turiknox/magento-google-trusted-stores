@@ -6,7 +6,7 @@ class Turiknox_Trustedstores_Helper_Data extends Mage_Core_Helper_Abstract
      *
      * @return bool
      */
-    public function isModuleEnabled()
+    public function isModuleEnabledInAdmin()
     {
         return (bool) Mage::getStoreConfig('google/trustedstores/enable');
     }

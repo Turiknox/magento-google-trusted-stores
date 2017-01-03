@@ -8,7 +8,7 @@ class Turiknox_Trustedstores_Block_Badge extends Mage_Core_Block_Template
      */
     public function isEnabled()
     {
-        return $this->helper('turiknox_trustedstores')->isModuleEnabled();
+        return $this->helper('turiknox_trustedstores')->isModuleEnabledInAdmin();
     }
 
     /**

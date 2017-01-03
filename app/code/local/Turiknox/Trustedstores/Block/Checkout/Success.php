@@ -22,7 +22,7 @@ class Turiknox_Trustedstores_Block_Checkout_Success extends Mage_Core_Block_Temp
      */
     public function isEnabled()
     {
-        return $this->helper('turiknox_trustedstores')->isModuleEnabled();
+        return $this->helper('turiknox_trustedstores')->isModuleEnabledInAdmin();
     }
 
     /**

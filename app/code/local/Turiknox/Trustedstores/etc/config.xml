@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <config>
+    <modules>
+        <Turiknox_Trustedstores>
+            <version>1.0.1</version>
+        </Turiknox_Trustedstores>
+    </modules>
     <global>
         <blocks>
             <turiknox_trustedstores>
