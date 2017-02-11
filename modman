@@ -1,0 +1,4 @@
+app/code/local/Turiknox/Trustedstores app/code/local/Turiknox/Trustedstores
+app/design/frontend/base/default/layout/turiknox/trustedstores.xml app/design/frontend/base/default/layout/turiknox/trustedstores.xml
+app/design/frontend/base/default/template/trustedstores app/design/frontend/base/default/template/trustedstores
+app/etc/modules/Turiknox_Trustedstores.xml app/etc/modules/Turiknox_Trustedstores.xml

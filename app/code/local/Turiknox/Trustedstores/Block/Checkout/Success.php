@@ -1,4 +1,13 @@
 <?php
+/*
+ * Turiknox_Trustedstores
+
+ * @category   Turiknox
+ * @package    Turiknox_Trustedstores
+ * @copyright  Copyright (c) 2017 Turiknox
+ * @license    https://github.com/Turiknox/magento-google-trusted-stores/blob/master/LICENSE.md
+ * @version    1.0.2
+ */
 class Turiknox_Trustedstores_Block_Checkout_Success extends Mage_Core_Block_Template
 {
     /**
